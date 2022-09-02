@@ -9,12 +9,21 @@
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mantine/core": "5.1.0",
     "@mantine/hooks": "5.1.0",
+    "@tabler/icons": "^1.92.0",
+    "babel-plugin-macros": "^3.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
+    "@types/feather-icons": "^4.7.0",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",

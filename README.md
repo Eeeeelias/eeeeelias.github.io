@@ -1,8 +1,3 @@
-# Mantine + Vite template
+# Portfolio
 
-Official [Mantine](https://mantine.dev/) + [Vite](https://vitejs.dev/) template.
-
-Links:
-
-- [Mantine documentation](https://mantine.dev/)
-- [Vite documentation](https://vitejs.dev/)
+My Portfolio to show off what I can (and can't) do.
