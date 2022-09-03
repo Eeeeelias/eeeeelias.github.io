@@ -122,6 +122,11 @@ const useStyles = createStyles(theme => ({
   },
 }))
 
+function toTop() {
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
+}
+
 export function ButtonToggle() {
   const { classes } = useStyles()
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
@@ -163,7 +168,8 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         [classes.linkActive]: active === link.link,
       })}
       onClick={() => {
-        //event.preventDefault();
+        //event.preventDefault()
+        //toTop()
         setActive(link.link)
       }}
     >
@@ -172,7 +178,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   ))
 
   return (
-    <Header height={56} mb={120} fixed={true}>
+    <Header height={56} mb={120} fixed>
       <Container className={classes.inner}>
         <Burger
           opened={opened}
@@ -183,6 +189,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         <Group className={classes.links} spacing={5}>
           {items}
         </Group>
+
         <Group position="apart">
           <Container>
             <Group

@@ -10,6 +10,7 @@ import {
 import { IconDna2 } from "@tabler/icons"
 
 import { BadgeCard } from "./cards"
+import { LeadGrid } from "./grid"
 import { HeaderMiddle } from "./header"
 import { Theming } from "./theme"
 
@@ -87,7 +88,7 @@ export default function App() {
               image={"/files/pmm.png"}
               title={"Plex Media Move"}
               description={
-                "Scripts to help rename, organize, move and combine movies to make them compatible with Plex"
+                "Scripts to help rename, organize, move and combine shows and movies to make them compatible with Plex"
               }
               demoLink={""}
               githubLink={"https://github.com/Eeeeelias/plex_media_move"}
@@ -111,6 +112,7 @@ export default function App() {
               labelPosition="center"
             />
           </Container>
+          <LeadGrid />
         </Stack>
       </Theming>
     </>
