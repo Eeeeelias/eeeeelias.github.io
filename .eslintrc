@@ -18,12 +18,22 @@
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["@emotion", "@typescript-eslint", "import", "unused-imports", "jsx-a11y"],
+  "plugins": [
+    "@emotion",
+    "@typescript-eslint",
+    "import",
+    "unused-imports",
+    "jsx-a11y"
+  ],
   "rules": {
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "internal"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ],
         "pathGroups": [
           {
             "pattern": "react",
@@ -31,7 +41,9 @@
             "position": "before"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["react"],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
@@ -39,7 +51,6 @@
         }
       }
     ],
-
     "prettier/prettier": [
       "error",
       {
@@ -53,17 +64,24 @@
         "jsxSingleQuote": false
       }
     ],
-
     "unused-imports/no-unused-imports": "error",
-    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
     "jsx-a11y/no-onchange": "off" // deprecated rule, will be deleted in a future release
-
   },
   "settings": {
-    "react": {"version": "detect" },
-    "jest": { "version": 27 }, // fixes error where jest is needed
+    "react": {
+      "version": "detect"
+    },
+    "jest": {
+      "version": 27
+    }, // fixes error where jest is needed
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
     }
   }
 }
